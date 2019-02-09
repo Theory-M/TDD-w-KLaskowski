@@ -14,6 +14,8 @@ public class WithFries implements Pricy, Caloric{
         return this.burger.getPrice().add(new BigDecimal(2.50));
     }
 
+    // robie nowy obiekt ktory w sobie przechowuje ten dekorowany
+    // potem tylko dodaje na przyklad frytki i ich wartosc kaloryczna
     @Override
     public int getCalories() {
         return this.burger.getCalories() + 500;

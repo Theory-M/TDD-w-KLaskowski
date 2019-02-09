@@ -7,7 +7,8 @@ public class User {
     String phone;    //optional
     String address;    //optional
 
-    public User(String firstName, String lastName) {
+    // jezeli usune public z przed User, to zrobi sie domyslnie package, czyli dostep do budowania Usera wylacznie z tego pakietu !!! bezpieczenstwo
+    User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
